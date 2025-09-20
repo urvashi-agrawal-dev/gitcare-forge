@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Code, Menu, X, User, Wallet, Bell } from "lucide-react";
+import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
+import gitcareLogo from "@/assets/gitcare-logo.png";
 
 const navItems = [
   { name: "Projects", href: "#projects" },
@@ -39,9 +41,15 @@ export function Navigation() {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex items-center gap-3 cursor-pointer"
           >
-            <Code className="h-8 w-8 text-primary" />
+            <motion.img
+              src={gitcareLogo}
+              alt="GitCare Logo"
+              className="w-10 h-10"
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            />
             <span className="text-2xl font-bold gradient-text">GitCare</span>
           </motion.div>
 
@@ -64,6 +72,8 @@ export function Navigation() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-4">
+            <AnimatedThemeToggler />
+            
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}

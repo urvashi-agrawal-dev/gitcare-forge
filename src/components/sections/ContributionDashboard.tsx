@@ -3,6 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Trophy, Zap, GitCommit, Calendar, Award } from "lucide-react";
+import { ArcTimeline } from "@/components/magicui/arc-timeline";
+import { AnimatedBeam } from "@/components/magicui/animated-beam";
+import { useRef } from "react";
 
 const contributions = [
   {
@@ -52,6 +55,32 @@ const badges = [
 ];
 
 export function ContributionDashboard() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const fromRef = useRef<HTMLDivElement>(null);
+  const toRef = useRef<HTMLDivElement>(null);
+  
+  const timelineItems = [
+    {
+      year: "2024",
+      title: "GitHub Champion",
+      description: "Achieved 500+ contributions across multiple repositories"
+    },
+    {
+      year: "2024",
+      title: "Bug Hunter Elite",
+      description: "Identified and fixed 50+ critical issues"
+    },
+    {
+      year: "2023",
+      title: "Community Builder", 
+      description: "Mentored 100+ developers in open source projects"
+    },
+    {
+      year: "2023",
+      title: "Code Architect",
+      description: "Led development of 3 major framework features"
+    }
+  ];
   const totalXP = 1200;
   const currentLevel = Math.floor(totalXP / 500) + 1;
   const xpToNextLevel = (currentLevel * 500) - totalXP;

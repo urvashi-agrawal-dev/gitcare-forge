@@ -6,6 +6,7 @@ import { ArrowRight, Code, Zap } from "lucide-react";
 import { useRef, useMemo } from "react";
 import * as THREE from "three";
 import heroBackground from "@/assets/hero-bg.jpg";
+import { ScrollBasedVelocity } from "@/components/magicui/scroll-based-velocity";
 
 // Particle system for the 3D background
 function Particles({ count = 200 }) {
@@ -147,6 +148,18 @@ export function HeroSection() {
               <Code className="h-4 w-4 text-secondary animate-pulse" />
               <span>5k+ Open Bounties</span>
             </div>
+          </motion.div>
+
+          {/* Scrolling velocity text */}
+          <motion.div
+            className="mt-16 overflow-hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
+          >
+            <ScrollBasedVelocity baseVelocity={-5} className="text-lg font-semibold text-primary/30">
+              ⚡ DECENTRALIZED • SECURE • INNOVATIVE • FUTURE-READY • 
+            </ScrollBasedVelocity>
           </motion.div>
         </motion.div>
       </div>

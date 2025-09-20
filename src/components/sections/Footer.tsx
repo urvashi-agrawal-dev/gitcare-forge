@@ -13,6 +13,7 @@ import {
   Heart,
   Zap
 } from "lucide-react";
+import { ScrollBasedVelocity } from "@/components/magicui/scroll-based-velocity";
 
 const socialLinks = [
   { name: "GitHub", icon: Github, href: "#", color: "hover:text-white" },
@@ -206,6 +207,19 @@ export function Footer() {
               99.9% uptime
             </Badge>
           </div>
+        </motion.div>
+
+        {/* Scrolling velocity footer text */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="mt-12 border-t border-glass-border pt-6"
+        >
+          <ScrollBasedVelocity baseVelocity={3} className="text-sm text-primary/20">
+            ⭐ CONTRIBUTE • EARN • CONNECT • BUILD THE FUTURE • OPEN SOURCE • DECENTRALIZED • 
+          </ScrollBasedVelocity>
         </motion.div>
       </div>
     </footer>
