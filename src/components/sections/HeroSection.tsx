@@ -73,19 +73,13 @@ function Scene3D() {
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0 opacity-20"
-        style={{
-          backgroundImage: `url(${heroBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      />
-      
-      {/* 3D Canvas Background */}
-      <div className="absolute inset-0 z-10">
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 z-0 animate-gradient-x" style={{
+        background: "linear-gradient(120deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%)",
+        opacity: 0.7
+      }} />
+      {/* 3D Canvas Background - more vibrant */}
+      <div className="absolute inset-0 z-10 pointer-events-none">
         <Canvas camera={{ position: [0, 0, 15], fov: 60 }}>
           <Scene3D />
         </Canvas>
@@ -130,7 +124,7 @@ export function HeroSection() {
             
             <Button variant="outline-neon" size="xl">
               <Code className="mr-2 h-5 w-5" />
-              Explore Projects
+              Explore Bounties
             </Button>
           </motion.div>
 

@@ -16,7 +16,7 @@ const projects = [
     forks: 456,
     maintainers: 12,
     difficulty: "Advanced",
-    bounty: "5.2 ETH",
+  bounty: "5.2 AVAX",
     status: "Active"
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     forks: 289,
     maintainers: 8,
     difficulty: "Intermediate",
-    bounty: "2.8 ETH",
+  bounty: "2.8 AVAX",
     status: "Hot"
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     forks: 678,
     maintainers: 15,
     difficulty: "Beginner",
-    bounty: "1.5 ETH",
+  bounty: "1.5 AVAX",
     status: "New"
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     forks: 234,
     maintainers: 6,
     difficulty: "Advanced",
-    bounty: "4.1 ETH",
+  bounty: "4.1 AVAX",
     status: "Active"
   },
   {
@@ -64,7 +64,7 @@ const projects = [
     forks: 345,
     maintainers: 9,
     difficulty: "Intermediate",
-    bounty: "3.0 ETH",
+  bounty: "3.0 AVAX",
     status: "Active"
   },
   {
@@ -76,7 +76,7 @@ const projects = [
     forks: 892,
     maintainers: 18,
     difficulty: "Beginner",
-    bounty: "2.2 ETH",
+  bounty: "2.2 AVAX",
     status: "Hot"
   }
 ];

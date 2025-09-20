@@ -14,7 +14,7 @@ const topContributors = [
     xp: 15420,
     level: 31,
     contributions: 89,
-    earnings: "45.2 ETH",
+  earnings: "45.2 AVAX",
     speciality: "Blockchain",
     streak: 28,
     badge: "Quantum Coder"
@@ -26,7 +26,7 @@ const topContributors = [
     xp: 13850,
     level: 28,
     contributions: 76,
-    earnings: "38.7 ETH",
+  earnings: "38.7 AVAX",
     speciality: "AI/ML",
     streak: 21,
     badge: "Neural Architect"
@@ -38,7 +38,7 @@ const topContributors = [
     xp: 12940,
     level: 26,
     contributions: 68,
-    earnings: "32.1 ETH",
+  earnings: "32.1 AVAX",
     speciality: "Frontend",
     streak: 15,
     badge: "UI Wizard"
@@ -54,7 +54,7 @@ const leaderboardData = [
     xp: 11200,
     level: 23,
     contributions: 54,
-    earnings: "28.5 ETH",
+  earnings: "28.5 AVAX",
     speciality: "DevOps",
     streak: 12,
     badge: "Cloud Master"
@@ -66,7 +66,7 @@ const leaderboardData = [
     xp: 10850,
     level: 22,
     contributions: 47,
-    earnings: "25.3 ETH",
+  earnings: "25.3 AVAX",
     speciality: "Security",
     streak: 18,
     badge: "Crypto Guardian"
@@ -78,7 +78,7 @@ const leaderboardData = [
     xp: 9650,
     level: 20,
     contributions: 42,
-    earnings: "22.1 ETH",
+  earnings: "22.1 AVAX",
     speciality: "Mobile",
     streak: 9,
     badge: "App Innovator"
@@ -90,7 +90,7 @@ const leaderboardData = [
     xp: 8940,
     level: 18,
     contributions: 38,
-    earnings: "19.7 ETH",
+  earnings: "19.7 AVAX",
     speciality: "Backend",
     streak: 14,
     badge: "API Architect"
@@ -102,7 +102,7 @@ const leaderboardData = [
     xp: 8320,
     level: 17,
     contributions: 35,
-    earnings: "17.4 ETH",
+  earnings: "17.4 AVAX",
     speciality: "Design",
     streak: 6,
     badge: "UX Pioneer"
