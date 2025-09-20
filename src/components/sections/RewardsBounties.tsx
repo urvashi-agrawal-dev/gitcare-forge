@@ -10,7 +10,7 @@ const bounties = [
     id: 1,
     title: "Implement Zero-Knowledge Proof Verification",
     project: "Neural DeFi Protocol",
-    reward: "8.5 ETH",
+  reward: "8.5 AVAX",
     usdValue: "$20,400",
     difficulty: "Expert",
     timeEstimate: "2-3 weeks",
@@ -23,7 +23,7 @@ const bounties = [
     id: 2,
     title: "Build React Native Mobile App",
     project: "Quantum Chat SDK",
-    reward: "6.2 ETH",
+  reward: "6.2 AVAX",
     usdValue: "$14,880",
     difficulty: "Advanced",
     timeEstimate: "3-4 weeks",
@@ -36,7 +36,7 @@ const bounties = [
     id: 3,
     title: "Create 3D Avatar System",
     project: "MetaVerse Builder",
-    reward: "4.8 ETH",
+  reward: "4.8 AVAX",
     usdValue: "$11,520",
     difficulty: "Intermediate",
     timeEstimate: "2 weeks",
@@ -49,7 +49,7 @@ const bounties = [
     id: 4,
     title: "Design Analytics Dashboard UI",
     project: "Blockchain Analytics",
-    reward: "3.5 ETH",
+  reward: "3.5 AVAX",
     usdValue: "$8,400",
     difficulty: "Intermediate",
     timeEstimate: "1-2 weeks",
@@ -62,7 +62,7 @@ const bounties = [
     id: 5,
     title: "Optimize ML Model Performance",
     project: "AI Code Review Bot",
-    reward: "7.1 ETH",
+  reward: "7.1 AVAX",
     usdValue: "$17,040",
     difficulty: "Expert",
     timeEstimate: "2-3 weeks",
@@ -75,7 +75,7 @@ const bounties = [
     id: 6,
     title: "Create Animation Library",
     project: "Holographic UI Kit",
-    reward: "5.0 ETH",
+  reward: "5.0 AVAX",
     usdValue: "$12,000",
     difficulty: "Advanced",
     timeEstimate: "2 weeks",
@@ -104,7 +104,7 @@ export function RewardsBounties() {
   const [filter, setFilter] = useState("All");
   
   const totalRewards = bounties.reduce((sum, bounty) => 
-    sum + parseFloat(bounty.reward.replace(" ETH", "")), 0
+    sum + parseFloat(bounty.reward.replace(" AVAX", "")), 0
   );
 
   return (
@@ -134,7 +134,7 @@ export function RewardsBounties() {
               className="text-center"
             >
               <div className="text-3xl font-bold text-primary">
-                {totalRewards.toFixed(1)} ETH
+                {totalRewards.toFixed(1)} AVAX
               </div>
               <div className="text-sm text-muted-foreground">Total Available</div>
             </motion.div>

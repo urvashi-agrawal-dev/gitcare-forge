@@ -1,3 +1,4 @@
+                  <div className="text-2xl font-bold">12.4 AVAX</div>
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";

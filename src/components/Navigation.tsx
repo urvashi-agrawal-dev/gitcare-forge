@@ -93,7 +93,7 @@ export function Navigation() {
               className="flex items-center gap-2 glass p-2 rounded-lg"
             >
               <Wallet className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium">12.4 ETH</span>
+              <span className="text-sm font-medium">12.4 AVAX</span>
             </motion.div>
 
             <motion.div
@@ -148,7 +148,7 @@ export function Navigation() {
             <div className="flex items-center justify-between pt-4 border-t border-glass-border">
               <div className="flex items-center gap-2">
                 <Wallet className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium">12.4 ETH</span>
+                <span className="text-sm font-medium">12.4 AVAX</span>
               </div>
               <Button variant="glass" size="sm">
                 <User className="h-4 w-4" />
